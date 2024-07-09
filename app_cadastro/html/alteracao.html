@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Alteração</title>
+    <link rel="icon" href="favicon.png"/>
+</head>
+<body>
+    <h1>Alteração</h1>
+    <h2>Dados do Registro</h2>
+    <form method="POST" action="consulta.php">
+        <label for="txt_cpf">CPF:</label>
+        <input type="text" disabled="true" id="txt_cpf" name="txt_cpf" size="15" value="<?php print($str_cpf); ?>">
+        <br>
+        <label for="txt_nome"><u>N</u>ome:</label>
+        <input type="text" id="txt_nome" name="txt_nome" tabindex="1" 
+               autofocus="true" autocomplete="off" required="true" accesskey="N" size="40" value="<?php print($nome); ?>">
+        <br>
+        <label for="txt_telefone"><u>T</u>elefone:</label>
+        <input type="text" id="txt_telefone" name="txt_telefone" tabindex="2" 
+               autocomplete="off" required="true" accesskey="T" size="15" value="<?php print($telefone); ?>">
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
